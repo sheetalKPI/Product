@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building for SIT environment..'
+                echo 'Building for UAT environment..'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing for SIT environment..'
+                echo 'Testing for UAT environment..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying in SIT to move to UAT ....'
+                echo 'Deploying in UAT ....'
             }
         }
     }
